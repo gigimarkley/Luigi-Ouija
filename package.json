@@ -1,0 +1,35 @@
+{
+  "name": "luigiouija",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-watch & npm run serve",
+    "serve": "http-server -c-1 ./public",
+    "build-watch": "webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/register": "^7.12.10",
+    "axios": "^0.21.1",
+    "axios-mock-adapter": "^1.16.0",
+    "babel-loader": "^8.2.2",
+    "http-server": "^13.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  }
+}

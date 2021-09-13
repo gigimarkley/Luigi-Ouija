@@ -1,0 +1,24 @@
+#letterButtons,#numButtons {
+    border-radius: 50px ;
+    height: 50px ;
+    width: 50px ;
+    font-size: 2em ;
+  }
+
+  #goodbyeButton {
+    border-radius: 15px ;
+    height: 150px ;
+    font-size: 100px;
+  }
+
+  #otherButtons {
+    border-radius: 15px ;
+    height: 75px ;
+    font-size: 50px
+  }
+
+  #message {
+      font-size: 100px
+  }
+
+
