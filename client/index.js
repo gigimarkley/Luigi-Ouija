@@ -6,7 +6,8 @@ import store from "./store";
 import App from "./App";
 
 ReactDOM.render(
-  <App />,
-
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById("app")
 );

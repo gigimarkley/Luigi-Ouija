@@ -1,6 +1,14 @@
 import React from "react";
+import { connect } from "react-redux";
 
-export const Message = () => {
-  return <div id="message">Message Here</div>;
+export const Message = (props) => {
+  return <div id="message">{props.message}</div>;
 };
-export default Message;
+
+const mapStateToProps = (state) => {
+  return {
+    message: state.message,
+  };
+};
+
+export default connect(mapStateToProps)(Message);

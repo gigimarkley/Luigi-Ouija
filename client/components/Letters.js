@@ -1,4 +1,5 @@
 import React from "react";
+import store, { addCharacter } from "../store";
 
 export const Letters = () => {
   const alphabet = [
@@ -29,11 +30,26 @@ export const Letters = () => {
     "y",
     "z",
   ];
+
+  function handleClick(event) {
+    event.preventDefault();
+    store.dispatch(addCharacter(event.target.value));
+  }
+
   return (
     <div>
       {/* map through alphabet*/}
-      {alphabet.map((letter) => {
-        return <button id="letterButtons">{letter}</button>;
+      {alphabet.map((letter, index) => {
+        return (
+          <button
+            key={index}
+            id="letterButtons"
+            value={letter}
+            onClick={handleClick}
+          >
+            {letter}
+          </button>
+        );
       })}
     </div>
   );
