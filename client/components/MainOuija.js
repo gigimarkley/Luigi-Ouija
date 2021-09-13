@@ -4,8 +4,8 @@ import Message from "./Message";
 
 export const MainOuija = () => {
   return (
-    <div>
-      <h1>LUIGI OUIJA</h1>
+    <div id="main">
+      <h1 id="title">LUIGI OUIJA</h1>
       <Buttons />
       <Message />
     </div>

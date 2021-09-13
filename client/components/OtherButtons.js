@@ -9,7 +9,7 @@ export const OtherButtons = (props) => {
     event.preventDefault();
     store.dispatch(replaceMessage(event.target.value));
   }
-  console.log("PROPS IN OTHER BUTTONS", props);
+
   return (
     <div>
       {/* map through other buttons*/}

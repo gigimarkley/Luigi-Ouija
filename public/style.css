@@ -1,24 +1,75 @@
+html {
+  background-color: green;
+}
+#app{
+  position: absolute;
+  color: #FFFFFF;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
 #letterButtons,#numButtons {
+    margin-bottom: 50px;
     border-radius: 50px ;
     height: 50px ;
     width: 50px ;
     font-size: 2em ;
   }
-
   #goodbyeButton {
+    margin-bottom: 50px;
     border-radius: 15px ;
-    height: 150px ;
-    font-size: 100px;
+    height: 100px ;
+    font-size: 50px;
   }
-
   #otherButtons {
+    margin-bottom: 50px;
     border-radius: 15px ;
     height: 75px ;
     font-size: 50px
   }
-
   #message {
-      font-size: 100px
+      font-size: 70px
+  }
+  #title {
+    font-size: 60px
   }
 
-
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+  body{
+    overflow-x: hidden;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .video-container{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+   iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  @media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+      height: 56.25vw;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+      width: 177.78vh;
+    }
+  }

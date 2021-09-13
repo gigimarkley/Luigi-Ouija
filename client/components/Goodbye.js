@@ -7,7 +7,6 @@ export const Goodbye = (props) => {
     event.preventDefault();
     store.dispatch(goodbyeFunc());
   }
-  console.log("PROPS IN GOODBYE", props);
   return (
     <div>
       {/* goodbye button*/}
