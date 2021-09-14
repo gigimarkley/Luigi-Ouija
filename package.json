@@ -23,6 +23,11 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.15.6",
+    "bootstrap": "^4.5.0",
+    "browser-sync": "^2.26.12",
+    "d3": "^5.16.0",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^7.2.5",
@@ -31,6 +36,8 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "requirejs": "^2.3.6",
+    "sweetalert": "^2.1.2",
     "webgazer": "^1.0.1"
   }
 }
